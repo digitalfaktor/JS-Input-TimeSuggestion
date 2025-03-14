@@ -2,6 +2,8 @@
 
 **JS Input TimeSuggestion** is an open-source JavaScript library that enhances time input fields with autocomplete suggestions, validation, and automatic conversion of various time formats to a standard format.
 
+![gif](https://github.com/user-attachments/assets/6cb64fe3-13a0-4dab-a5ed-a9ec41d603b1)
+
 ## Overview
 
 This library allows users to enter time values in multiple formats (e.g. `3h15`, `15m`, `01:30:00`, `3:15`, `3.15`) and provides:
@@ -42,13 +44,13 @@ This library allows users to enter time values in multiple formats (e.g. `3h15`,
 
 Clone the repository from GitHub:
 
-    git clone https://github.com/yourusername/JSInputTimeSuggestion.git
+    git clone https://github.com/digitalfaktor/JSInputTimeSuggestion.git
 
 2. **Include the Script**
 
 Include the JavaScript file in your HTML:
 
-    <script src="path/to/JSInputTimeSuggestion.js"></script>
+    <script src="path/to/js-input-time-suggestion.js"></script>
 
 ## Usage
 
@@ -64,6 +66,7 @@ Initialize the library with an optional configuration object. You can do this in
 
     <script>
     JSInputTimeSuggestion.init({
+        inputClass: "timesuggestion",  // CSS class for the input field
         outputFormat: "h:m:s", // Output format for the hidden input (currently only "h:m:s" is supported)
         invalidMessage: "Please enter a valid time (e.g. 3h15 or 01:30:00).",
         suggestionClass: "dropdown-item", // CSS class for suggestion items
